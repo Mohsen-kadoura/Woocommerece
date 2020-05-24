@@ -1,0 +1,16 @@
+/*
+Theme Name: Storefront Child Theme 02
+Theme URI: https://woocommerce.com/storefront/
+Template: storefront
+Author: Mohsen
+Description: Storefront Child Theme
+Version: 1.0.0.1589296017
+Updated: 2020-05-12 11:06:57
+
+*/
+
+@media (min-width: 768px) {
+.col-full {
+    display: block;
+}
+}

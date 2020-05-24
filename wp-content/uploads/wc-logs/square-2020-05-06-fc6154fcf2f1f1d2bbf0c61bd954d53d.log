@@ -1,0 +1,237 @@
+05-06-2020 @ 10:09:11 - Manually disconnected
+05-06-2020 @ 10:09:28 - Request
+Request
+method:
+uri: listLocationsWithHttpInfo
+user-agent: WooCommerce-Square/2.1.4 (WooCommerce/4.1.0; WordPress/5.4.1)
+headers: Array
+(
+)
+body:
+duration: 0.41706s
+
+05-06-2020 @ 10:09:28 - Response
+Response
+code: 200
+message:
+headers: Array
+(
+    [0] => HTTP/2 200
+    [content-type] => application/json
+    [square-version] => 2019-08-14
+    [vary] => Origin, Accept-Encoding
+    [x-content-type-options] => nosniff
+    [x-download-options] => noopen
+    [x-frame-options] => SAMEORIGIN
+    [x-permitted-cross-domain-policies] => none
+    [x-xss-protection] => 1; mode=block
+    [date] => Wed, 06 May 2020 14:09:28 GMT
+    [content-length] => 507
+    [strict-transport-security] => max-age=631152000; includeSubDomains; preload
+)
+body: {
+    "locations": [
+        {
+            "id": "8HDN7TNTTCXX6",
+            "name": "Default Test Account",
+            "address": {
+                "address_line_1": "80 Wellington St",
+                "locality": "Ottawa",
+                "administrative_district_level_1": "ON",
+                "postal_code": "K1A 0A2",
+                "country": "CA"
+            },
+            "timezone": "Etc\/UTC",
+            "capabilities": [
+                "CREDIT_CARD_PROCESSING"
+            ],
+            "status": "ACTIVE",
+            "created_at": "2020-05-06T13:59:11Z",
+            "merchant_id": "Q9X177KFPCPM8",
+            "country": "CA",
+            "language_code": "en-CA",
+            "currency": "CAD",
+            "business_name": "Default Test Account",
+            "type": "PHYSICAL",
+            "business_hours": {}
+        }
+    ]
+}
+
+05-06-2020 @ 10:13:49 - Request
+Request
+method:
+uri: listLocationsWithHttpInfo
+user-agent: WooCommerce-Square/2.1.4 (WooCommerce/4.1.0; WordPress/5.4.1)
+headers: Array
+(
+)
+body:
+duration: 0.9211s
+
+05-06-2020 @ 10:13:49 - Response
+Response
+code: 200
+message:
+headers: Array
+(
+    [0] => HTTP/2 200
+    [content-type] => application/json
+    [square-version] => 2019-08-14
+    [vary] => Origin, Accept-Encoding
+    [x-content-type-options] => nosniff
+    [x-download-options] => noopen
+    [x-frame-options] => SAMEORIGIN
+    [x-permitted-cross-domain-policies] => none
+    [x-xss-protection] => 1; mode=block
+    [date] => Wed, 06 May 2020 14:13:49 GMT
+    [content-length] => 507
+    [strict-transport-security] => max-age=631152000; includeSubDomains; preload
+)
+body: {
+    "locations": [
+        {
+            "id": "8HDN7TNTTCXX6",
+            "name": "Default Test Account",
+            "address": {
+                "address_line_1": "80 Wellington St",
+                "locality": "Ottawa",
+                "administrative_district_level_1": "ON",
+                "postal_code": "K1A 0A2",
+                "country": "CA"
+            },
+            "timezone": "Etc\/UTC",
+            "capabilities": [
+                "CREDIT_CARD_PROCESSING"
+            ],
+            "status": "ACTIVE",
+            "created_at": "2020-05-06T13:59:11Z",
+            "merchant_id": "Q9X177KFPCPM8",
+            "country": "CA",
+            "language_code": "en-CA",
+            "currency": "CAD",
+            "business_name": "Default Test Account",
+            "type": "PHYSICAL",
+            "business_hours": {}
+        }
+    ]
+}
+
+05-06-2020 @ 13:14:55 - Request
+Request
+method:
+uri: listLocationsWithHttpInfo
+user-agent: WooCommerce-Square/2.1.4 (WooCommerce/4.1.0; WordPress/5.4.1)
+headers: Array
+(
+)
+body:
+duration: 0.60533s
+
+05-06-2020 @ 13:14:55 - Response
+Response
+code: 200
+message:
+headers: Array
+(
+    [0] => HTTP/2 200
+    [content-type] => application/json
+    [square-version] => 2019-08-14
+    [vary] => Origin, Accept-Encoding
+    [x-content-type-options] => nosniff
+    [x-download-options] => noopen
+    [x-frame-options] => SAMEORIGIN
+    [x-permitted-cross-domain-policies] => none
+    [x-xss-protection] => 1; mode=block
+    [date] => Wed, 06 May 2020 17:14:55 GMT
+    [content-length] => 507
+    [strict-transport-security] => max-age=631152000; includeSubDomains; preload
+)
+body: {
+    "locations": [
+        {
+            "id": "8HDN7TNTTCXX6",
+            "name": "Default Test Account",
+            "address": {
+                "address_line_1": "80 Wellington St",
+                "locality": "Ottawa",
+                "administrative_district_level_1": "ON",
+                "postal_code": "K1A 0A2",
+                "country": "CA"
+            },
+            "timezone": "Etc\/UTC",
+            "capabilities": [
+                "CREDIT_CARD_PROCESSING"
+            ],
+            "status": "ACTIVE",
+            "created_at": "2020-05-06T13:59:11Z",
+            "merchant_id": "Q9X177KFPCPM8",
+            "country": "CA",
+            "language_code": "en-CA",
+            "currency": "CAD",
+            "business_name": "Default Test Account",
+            "type": "PHYSICAL",
+            "business_hours": {}
+        }
+    ]
+}
+
+05-06-2020 @ 15:59:21 - Request
+Request
+method:
+uri: listLocationsWithHttpInfo
+user-agent: WooCommerce-Square/2.1.4 (WooCommerce/4.1.0; WordPress/5.4.1)
+headers: Array
+(
+)
+body:
+duration: 0.57304s
+
+05-06-2020 @ 15:59:21 - Response
+Response
+code: 200
+message:
+headers: Array
+(
+    [0] => HTTP/2 200
+    [content-type] => application/json
+    [square-version] => 2019-08-14
+    [vary] => Origin, Accept-Encoding
+    [x-content-type-options] => nosniff
+    [x-download-options] => noopen
+    [x-frame-options] => SAMEORIGIN
+    [x-permitted-cross-domain-policies] => none
+    [x-xss-protection] => 1; mode=block
+    [date] => Wed, 06 May 2020 19:59:21 GMT
+    [content-length] => 507
+    [strict-transport-security] => max-age=631152000; includeSubDomains; preload
+)
+body: {
+    "locations": [
+        {
+            "id": "8HDN7TNTTCXX6",
+            "name": "Default Test Account",
+            "address": {
+                "address_line_1": "80 Wellington St",
+                "locality": "Ottawa",
+                "administrative_district_level_1": "ON",
+                "postal_code": "K1A 0A2",
+                "country": "CA"
+            },
+            "timezone": "Etc\/UTC",
+            "capabilities": [
+                "CREDIT_CARD_PROCESSING"
+            ],
+            "status": "ACTIVE",
+            "created_at": "2020-05-06T13:59:11Z",
+            "merchant_id": "Q9X177KFPCPM8",
+            "country": "CA",
+            "language_code": "en-CA",
+            "currency": "CAD",
+            "business_name": "Default Test Account",
+            "type": "PHYSICAL",
+            "business_hours": {}
+        }
+    ]
+}
+

@@ -1,0 +1,1502 @@
+05-07-2020 @ 07:41:09 - Square.js Response:
+ Array
+(
+    [digital_wallet_type] => NONE
+    [card_brand] => VISA
+    [last_4] => 1111
+    [exp_month] => 4
+    [exp_year] => 2022
+    [billing_postal_code] => K2A 0Y2
+)
+
+05-07-2020 @ 07:41:10 - Request
+method:
+uri: createOrderWithHttpInfo/8HDN7TNTTCXX6
+user-agent: WooCommerce-Square/2.1.4 (WooCommerce/4.1.0; WordPress/5.4.1)
+headers: Array
+(
+)
+body: {
+    "order": {
+        "reference_id": "104",
+        "line_items": [
+            {
+                "name": "B-Work from Home",
+                "quantity": "1",
+                "applied_taxes": [],
+                "base_price_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "name": "Cap",
+                "quantity": "1",
+                "applied_taxes": [],
+                "base_price_money": {
+                    "amount": 1600,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "name": "Flat rate",
+                "quantity": "1",
+                "applied_taxes": [],
+                "base_price_money": {
+                    "amount": 800,
+                    "currency": "CAD"
+                }
+            }
+        ],
+        "taxes": []
+    },
+    "idempotency_key": "6db0f1d2d879ceeef363cf5a065c8915:104"
+}
+duration: 0.62454s
+
+05-07-2020 @ 07:41:10 - Response
+code: 200
+message:
+headers: Array
+(
+    [0] => HTTP/2 200
+    [date] => Thu, 07 May 2020 11:41:10 GMT
+    [frame-options] => DENY
+    [x-frame-options] => DENY
+    [x-content-type-options] => nosniff
+    [x-xss-protection] => 1; mode=block
+    [content-type] => application/json;charset=utf-8
+    [square-version] => 2019-08-14
+    [vary] => Accept-Encoding, User-Agent
+    [strict-transport-security] => max-age=631152000; includeSubDomains; preload
+)
+body: {
+    "order": {
+        "id": "fIDL0GBlMTr5SMywx5UK2kCnCg4F",
+        "location_id": "8HDN7TNTTCXX6",
+        "reference_id": "104",
+        "source": {
+            "name": "Sandbox for sq0idp-gRf8qWctHlppoJEs_Xm28w"
+        },
+        "line_items": [
+            {
+                "uid": "RQBzgcdkjA8rvayyn5ThVD",
+                "name": "B-Work from Home",
+                "quantity": "1",
+                "base_price_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                },
+                "variation_total_price_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                },
+                "gross_sales_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                },
+                "total_tax_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_discount_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "uid": "LdrUN1HNPvNUgmpZCBlaXB",
+                "name": "Cap",
+                "quantity": "1",
+                "base_price_money": {
+                    "amount": 1600,
+                    "currency": "CAD"
+                },
+                "variation_total_price_money": {
+                    "amount": 1600,
+                    "currency": "CAD"
+                },
+                "gross_sales_money": {
+                    "amount": 1600,
+                    "currency": "CAD"
+                },
+                "total_tax_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_discount_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_money": {
+                    "amount": 1600,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "uid": "rk1Koyg5RNum7G5LrvzpVB",
+                "name": "Flat rate",
+                "quantity": "1",
+                "base_price_money": {
+                    "amount": 800,
+                    "currency": "CAD"
+                },
+                "variation_total_price_money": {
+                    "amount": 800,
+                    "currency": "CAD"
+                },
+                "gross_sales_money": {
+                    "amount": 800,
+                    "currency": "CAD"
+                },
+                "total_tax_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_discount_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_money": {
+                    "amount": 800,
+                    "currency": "CAD"
+                }
+            }
+        ],
+        "net_amounts": {
+            "total_money": {
+                "amount": 3900,
+                "currency": "CAD"
+            },
+            "tax_money": {
+                "amount": 0,
+                "currency": "CAD"
+            },
+            "discount_money": {
+                "amount": 0,
+                "currency": "CAD"
+            },
+            "tip_money": {
+                "amount": 0,
+                "currency": "CAD"
+            },
+            "service_charge_money": {
+                "amount": 0,
+                "currency": "CAD"
+            }
+        },
+        "created_at": "2020-05-07T11:41:10.240Z",
+        "updated_at": "2020-05-07T11:41:10.240Z",
+        "state": "OPEN",
+        "version": 1,
+        "total_money": {
+            "amount": 3900,
+            "currency": "CAD"
+        },
+        "total_tax_money": {
+            "amount": 0,
+            "currency": "CAD"
+        },
+        "total_discount_money": {
+            "amount": 0,
+            "currency": "CAD"
+        },
+        "total_service_charge_money": {
+            "amount": 0,
+            "currency": "CAD"
+        }
+    }
+}
+
+05-07-2020 @ 07:41:11 - Request
+method:
+uri: chargeWithHttpInfo/8HDN7TNTTCXX6
+user-agent: WooCommerce-Square/2.1.4 (WooCommerce/4.1.0; WordPress/5.4.1)
+headers: Array
+(
+)
+body: {
+    "idempotency_key": "6db0f1d2d879ceeef363cf5a065c8915:104",
+    "amount_money": {
+        "amount": 3900,
+        "currency": "CAD"
+    },
+    "card_nonce": "cnon:CBASEJQ0ygtRP5NNcjHuDq70u3Y",
+    "delay_capture": false,
+    "reference_id": "104",
+    "note": "BUSINESS1 - Order 104",
+    "customer_id": "Y82YE25Q9GSKS72EXY1H824E9M",
+    "billing_address": {
+        "address_line_1": "256 Carling",
+        "address_line_2": "",
+        "locality": "Ottawa",
+        "administrative_district_level_1": "ON",
+        "postal_code": "K2A 0Y2",
+        "country": "CA",
+        "first_name": "Sam",
+        "last_name": "Anderson",
+        "organization": ""
+    },
+    "shipping_address": {
+        "address_line_1": "256 Carling",
+        "address_line_2": "",
+        "locality": "Ottawa",
+        "administrative_district_level_1": "ON",
+        "postal_code": "K2A 0Y2",
+        "country": "CA",
+        "first_name": "Sam",
+        "last_name": "Anderson"
+    },
+    "buyer_email_address": "schmidtandeson@gmail.com",
+    "order_id": "fIDL0GBlMTr5SMywx5UK2kCnCg4F",
+    "verification_token": "verf:07fc6d6f-b668-49d6-9519-b096e11a61f3"
+}
+duration: 0.73176s
+
+05-07-2020 @ 07:41:11 - Response
+code: 200
+message:
+headers: Array
+(
+    [0] => HTTP/2 200
+    [content-type] => application/json
+    [square-version] => 2019-08-14
+    [vary] => Origin, Accept-Encoding
+    [x-content-type-options] => nosniff
+    [x-download-options] => noopen
+    [x-frame-options] => SAMEORIGIN
+    [x-permitted-cross-domain-policies] => none
+    [x-xss-protection] => 1; mode=block
+    [date] => Thu, 07 May 2020 11:41:10 GMT
+    [content-length] => 699
+    [strict-transport-security] => max-age=631152000; includeSubDomains; preload
+)
+body: {
+    "transaction": {
+        "id": "fIDL0GBlMTr5SMywx5UK2kCnCg4F",
+        "location_id": "8HDN7TNTTCXX6",
+        "created_at": "2020-05-07T11:41:10Z",
+        "tenders": [
+            {
+                "id": "F8xk14OOMhNAxeRscOK23a2EuaB",
+                "location_id": "8HDN7TNTTCXX6",
+                "transaction_id": "fIDL0GBlMTr5SMywx5UK2kCnCg4F",
+                "created_at": "2020-05-07T11:41:10Z",
+                "note": "BUSINESS1 - Order 104",
+                "amount_money": {
+                    "amount": 3900,
+                    "currency": "CAD"
+                },
+                "customer_id": "Y82YE25Q9GSKS72EXY1H824E9M",
+                "type": "CARD",
+                "card_details": {
+                    "status": "CAPTURED",
+                    "card": {
+                        "card_brand": "VISA",
+                        "last_4": "1111",
+                        "fingerprint": "sq-1-b44pvxfHPTyKGjbJlDoo6-Y1ZQk1tSZOnT3FDxkAhnNnckkHnPqa8zRUNtUCEENyMw"
+                    },
+                    "entry_method": "KEYED"
+                }
+            }
+        ],
+        "reference_id": "104",
+        "product": "EXTERNAL_API",
+        "order_id": "fIDL0GBlMTr5SMywx5UK2kCnCg4F"
+    }
+}
+
+05-07-2020 @ 08:13:45 - Request
+method:
+uri: createOrderWithHttpInfo/8HDN7TNTTCXX6
+user-agent: WooCommerce-Square/2.1.4 (WooCommerce/4.1.0; WordPress/5.4.1)
+headers: Array
+(
+)
+body: {
+    "order": {
+        "reference_id": "105",
+        "line_items": [
+            {
+                "name": "B-Work from Home",
+                "quantity": "1",
+                "applied_taxes": [],
+                "base_price_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "name": "Cap",
+                "quantity": "1",
+                "applied_taxes": [],
+                "base_price_money": {
+                    "amount": 1600,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "name": "Flat rate",
+                "quantity": "1",
+                "applied_taxes": [],
+                "base_price_money": {
+                    "amount": 800,
+                    "currency": "CAD"
+                }
+            }
+        ],
+        "taxes": []
+    },
+    "idempotency_key": "6db0f1d2d879ceeef363cf5a065c8915:105"
+}
+duration: 0.49678s
+
+05-07-2020 @ 08:13:45 - Response
+code: 200
+message:
+headers: Array
+(
+    [0] => HTTP/2 200
+    [date] => Thu, 07 May 2020 12:13:45 GMT
+    [frame-options] => DENY
+    [x-frame-options] => DENY
+    [x-content-type-options] => nosniff
+    [x-xss-protection] => 1; mode=block
+    [content-type] => application/json;charset=utf-8
+    [square-version] => 2019-08-14
+    [vary] => Accept-Encoding, User-Agent
+    [strict-transport-security] => max-age=631152000; includeSubDomains; preload
+)
+body: {
+    "order": {
+        "id": "x74l7JLDDdvleHQ5E4pYr9uubg4F",
+        "location_id": "8HDN7TNTTCXX6",
+        "reference_id": "105",
+        "source": {
+            "name": "Sandbox for sq0idp-gRf8qWctHlppoJEs_Xm28w"
+        },
+        "line_items": [
+            {
+                "uid": "BDCEQIoNs9Qd761XrkbEgC",
+                "name": "B-Work from Home",
+                "quantity": "1",
+                "base_price_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                },
+                "variation_total_price_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                },
+                "gross_sales_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                },
+                "total_tax_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_discount_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "uid": "dSBOBmhHHI9YBtGNtc4dYB",
+                "name": "Cap",
+                "quantity": "1",
+                "base_price_money": {
+                    "amount": 1600,
+                    "currency": "CAD"
+                },
+                "variation_total_price_money": {
+                    "amount": 1600,
+                    "currency": "CAD"
+                },
+                "gross_sales_money": {
+                    "amount": 1600,
+                    "currency": "CAD"
+                },
+                "total_tax_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_discount_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_money": {
+                    "amount": 1600,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "uid": "Wz0stqe7zKoOvpzbUCBbuD",
+                "name": "Flat rate",
+                "quantity": "1",
+                "base_price_money": {
+                    "amount": 800,
+                    "currency": "CAD"
+                },
+                "variation_total_price_money": {
+                    "amount": 800,
+                    "currency": "CAD"
+                },
+                "gross_sales_money": {
+                    "amount": 800,
+                    "currency": "CAD"
+                },
+                "total_tax_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_discount_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_money": {
+                    "amount": 800,
+                    "currency": "CAD"
+                }
+            }
+        ],
+        "net_amounts": {
+            "total_money": {
+                "amount": 3900,
+                "currency": "CAD"
+            },
+            "tax_money": {
+                "amount": 0,
+                "currency": "CAD"
+            },
+            "discount_money": {
+                "amount": 0,
+                "currency": "CAD"
+            },
+            "tip_money": {
+                "amount": 0,
+                "currency": "CAD"
+            },
+            "service_charge_money": {
+                "amount": 0,
+                "currency": "CAD"
+            }
+        },
+        "created_at": "2020-05-07T12:13:45.413Z",
+        "updated_at": "2020-05-07T12:13:45.413Z",
+        "state": "OPEN",
+        "version": 1,
+        "total_money": {
+            "amount": 3900,
+            "currency": "CAD"
+        },
+        "total_tax_money": {
+            "amount": 0,
+            "currency": "CAD"
+        },
+        "total_discount_money": {
+            "amount": 0,
+            "currency": "CAD"
+        },
+        "total_service_charge_money": {
+            "amount": 0,
+            "currency": "CAD"
+        }
+    }
+}
+
+05-07-2020 @ 08:13:45 - Square.js Response:
+ Array
+(
+    [digital_wallet_type] => NONE
+    [card_brand] => VISA
+    [last_4] => 1111
+    [exp_month] => 4
+    [exp_year] => 2022
+    [billing_postal_code] => K2A 0Y2
+)
+
+05-07-2020 @ 08:13:46 - Request
+method:
+uri: chargeWithHttpInfo/8HDN7TNTTCXX6
+user-agent: WooCommerce-Square/2.1.4 (WooCommerce/4.1.0; WordPress/5.4.1)
+headers: Array
+(
+)
+body: {
+    "idempotency_key": "6db0f1d2d879ceeef363cf5a065c8915:105",
+    "amount_money": {
+        "amount": 3900,
+        "currency": "CAD"
+    },
+    "card_nonce": "cnon:CBASEHmxhpe0Y7ahAp1DoNK_VZE",
+    "delay_capture": false,
+    "reference_id": "105",
+    "note": "BUSINESS1 - Order 105",
+    "customer_id": "Y82YE25Q9GSKS72EXY1H824E9M",
+    "billing_address": {
+        "address_line_1": "256 Carling",
+        "address_line_2": "",
+        "locality": "Ottawa",
+        "administrative_district_level_1": "ON",
+        "postal_code": "K2A 0Y2",
+        "country": "CA",
+        "first_name": "Sam",
+        "last_name": "Anderson",
+        "organization": ""
+    },
+    "shipping_address": {
+        "address_line_1": "256 Carling",
+        "address_line_2": "",
+        "locality": "Ottawa",
+        "administrative_district_level_1": "ON",
+        "postal_code": "K2A 0Y2",
+        "country": "CA",
+        "first_name": "Sam",
+        "last_name": "Anderson"
+    },
+    "buyer_email_address": "schmidtandeson@gmail.com",
+    "order_id": "x74l7JLDDdvleHQ5E4pYr9uubg4F",
+    "verification_token": "verf:09f96010-50ff-4ce5-9b33-ac563eadeb12"
+}
+duration: 0.77654s
+
+05-07-2020 @ 08:13:46 - Response
+code: 200
+message:
+headers: Array
+(
+    [0] => HTTP/2 200
+    [content-type] => application/json
+    [square-version] => 2019-08-14
+    [vary] => Origin, Accept-Encoding
+    [x-content-type-options] => nosniff
+    [x-download-options] => noopen
+    [x-frame-options] => SAMEORIGIN
+    [x-permitted-cross-domain-policies] => none
+    [x-xss-protection] => 1; mode=block
+    [date] => Thu, 07 May 2020 12:13:46 GMT
+    [content-length] => 699
+    [strict-transport-security] => max-age=631152000; includeSubDomains; preload
+)
+body: {
+    "transaction": {
+        "id": "x74l7JLDDdvleHQ5E4pYr9uubg4F",
+        "location_id": "8HDN7TNTTCXX6",
+        "created_at": "2020-05-07T12:13:46Z",
+        "tenders": [
+            {
+                "id": "f9pTXltc3iMU9k6truGjkvIduaB",
+                "location_id": "8HDN7TNTTCXX6",
+                "transaction_id": "x74l7JLDDdvleHQ5E4pYr9uubg4F",
+                "created_at": "2020-05-07T12:13:45Z",
+                "note": "BUSINESS1 - Order 105",
+                "amount_money": {
+                    "amount": 3900,
+                    "currency": "CAD"
+                },
+                "customer_id": "Y82YE25Q9GSKS72EXY1H824E9M",
+                "type": "CARD",
+                "card_details": {
+                    "status": "CAPTURED",
+                    "card": {
+                        "card_brand": "VISA",
+                        "last_4": "1111",
+                        "fingerprint": "sq-1-b44pvxfHPTyKGjbJlDoo6-Y1ZQk1tSZOnT3FDxkAhnNnckkHnPqa8zRUNtUCEENyMw"
+                    },
+                    "entry_method": "KEYED"
+                }
+            }
+        ],
+        "reference_id": "105",
+        "product": "EXTERNAL_API",
+        "order_id": "x74l7JLDDdvleHQ5E4pYr9uubg4F"
+    }
+}
+
+05-07-2020 @ 08:44:52 - Square.js Response:
+ Array
+(
+    [digital_wallet_type] => NONE
+    [card_brand] => VISA
+    [last_4] => 1111
+    [exp_month] => 4
+    [exp_year] => 2022
+    [billing_postal_code] => K2A 0Y2
+)
+
+05-07-2020 @ 08:44:54 - Request
+method:
+uri: createOrderWithHttpInfo/8HDN7TNTTCXX6
+user-agent: WooCommerce-Square/2.1.4 (WooCommerce/4.1.0; WordPress/5.4.1)
+headers: Array
+(
+)
+body: {
+    "order": {
+        "reference_id": "106",
+        "line_items": [
+            {
+                "name": "B-Work from Home",
+                "quantity": "1",
+                "applied_taxes": [],
+                "base_price_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "name": "Album",
+                "quantity": "1",
+                "applied_taxes": [],
+                "base_price_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                }
+            }
+        ],
+        "taxes": []
+    },
+    "idempotency_key": "6db0f1d2d879ceeef363cf5a065c8915:106"
+}
+duration: 0.58159s
+
+05-07-2020 @ 08:44:54 - Response
+code: 200
+message:
+headers: Array
+(
+    [0] => HTTP/2 200
+    [date] => Thu, 07 May 2020 12:44:54 GMT
+    [frame-options] => DENY
+    [x-frame-options] => DENY
+    [x-content-type-options] => nosniff
+    [x-xss-protection] => 1; mode=block
+    [content-type] => application/json;charset=utf-8
+    [square-version] => 2019-08-14
+    [vary] => Accept-Encoding, User-Agent
+    [strict-transport-security] => max-age=631152000; includeSubDomains; preload
+)
+body: {
+    "order": {
+        "id": "tHjLxfLupVdYCrUXhBCDuVB7Rh4F",
+        "location_id": "8HDN7TNTTCXX6",
+        "reference_id": "106",
+        "source": {
+            "name": "Sandbox for sq0idp-gRf8qWctHlppoJEs_Xm28w"
+        },
+        "line_items": [
+            {
+                "uid": "aBkwYLwspS7NfAXRAcpntD",
+                "name": "B-Work from Home",
+                "quantity": "1",
+                "base_price_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                },
+                "variation_total_price_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                },
+                "gross_sales_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                },
+                "total_tax_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_discount_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "uid": "lrPcasvjRpbbIvttr66bDD",
+                "name": "Album",
+                "quantity": "1",
+                "base_price_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                },
+                "variation_total_price_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                },
+                "gross_sales_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                },
+                "total_tax_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_discount_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                }
+            }
+        ],
+        "net_amounts": {
+            "total_money": {
+                "amount": 3000,
+                "currency": "CAD"
+            },
+            "tax_money": {
+                "amount": 0,
+                "currency": "CAD"
+            },
+            "discount_money": {
+                "amount": 0,
+                "currency": "CAD"
+            },
+            "tip_money": {
+                "amount": 0,
+                "currency": "CAD"
+            },
+            "service_charge_money": {
+                "amount": 0,
+                "currency": "CAD"
+            }
+        },
+        "created_at": "2020-05-07T12:44:54.415Z",
+        "updated_at": "2020-05-07T12:44:54.415Z",
+        "state": "OPEN",
+        "version": 1,
+        "total_money": {
+            "amount": 3000,
+            "currency": "CAD"
+        },
+        "total_tax_money": {
+            "amount": 0,
+            "currency": "CAD"
+        },
+        "total_discount_money": {
+            "amount": 0,
+            "currency": "CAD"
+        },
+        "total_service_charge_money": {
+            "amount": 0,
+            "currency": "CAD"
+        }
+    }
+}
+
+05-07-2020 @ 08:44:55 - Request
+method:
+uri: chargeWithHttpInfo/8HDN7TNTTCXX6
+user-agent: WooCommerce-Square/2.1.4 (WooCommerce/4.1.0; WordPress/5.4.1)
+headers: Array
+(
+)
+body: {
+    "idempotency_key": "6db0f1d2d879ceeef363cf5a065c8915:106",
+    "amount_money": {
+        "amount": 3000,
+        "currency": "CAD"
+    },
+    "card_nonce": "cnon:CBASEE9DhUPOGXovi4QJL74CyG0",
+    "delay_capture": false,
+    "reference_id": "106",
+    "note": "BUSINESS1 - Order 106",
+    "customer_id": "Y82YE25Q9GSKS72EXY1H824E9M",
+    "billing_address": {
+        "address_line_1": "256 Carling",
+        "address_line_2": "",
+        "locality": "Ottawa",
+        "administrative_district_level_1": "ON",
+        "postal_code": "K2A 0Y2",
+        "country": "CA",
+        "first_name": "Sam",
+        "last_name": "Anderson",
+        "organization": ""
+    },
+    "buyer_email_address": "schmidtandeson@gmail.com",
+    "order_id": "tHjLxfLupVdYCrUXhBCDuVB7Rh4F",
+    "verification_token": "verf:2cebc520-fbcc-4b42-83f5-da0ccc4f8de2"
+}
+duration: 0.7678s
+
+05-07-2020 @ 08:44:55 - Response
+code: 200
+message:
+headers: Array
+(
+    [0] => HTTP/2 200
+    [content-type] => application/json
+    [square-version] => 2019-08-14
+    [vary] => Origin, Accept-Encoding
+    [x-content-type-options] => nosniff
+    [x-download-options] => noopen
+    [x-frame-options] => SAMEORIGIN
+    [x-permitted-cross-domain-policies] => none
+    [x-xss-protection] => 1; mode=block
+    [date] => Thu, 07 May 2020 12:44:54 GMT
+    [content-length] => 699
+    [strict-transport-security] => max-age=631152000; includeSubDomains; preload
+)
+body: {
+    "transaction": {
+        "id": "tHjLxfLupVdYCrUXhBCDuVB7Rh4F",
+        "location_id": "8HDN7TNTTCXX6",
+        "created_at": "2020-05-07T12:44:55Z",
+        "tenders": [
+            {
+                "id": "ZCj0SFkoQxmGRI5cXYih4YXguaB",
+                "location_id": "8HDN7TNTTCXX6",
+                "transaction_id": "tHjLxfLupVdYCrUXhBCDuVB7Rh4F",
+                "created_at": "2020-05-07T12:44:54Z",
+                "note": "BUSINESS1 - Order 106",
+                "amount_money": {
+                    "amount": 3000,
+                    "currency": "CAD"
+                },
+                "customer_id": "Y82YE25Q9GSKS72EXY1H824E9M",
+                "type": "CARD",
+                "card_details": {
+                    "status": "CAPTURED",
+                    "card": {
+                        "card_brand": "VISA",
+                        "last_4": "1111",
+                        "fingerprint": "sq-1-b44pvxfHPTyKGjbJlDoo6-Y1ZQk1tSZOnT3FDxkAhnNnckkHnPqa8zRUNtUCEENyMw"
+                    },
+                    "entry_method": "KEYED"
+                }
+            }
+        ],
+        "reference_id": "106",
+        "product": "EXTERNAL_API",
+        "order_id": "tHjLxfLupVdYCrUXhBCDuVB7Rh4F"
+    }
+}
+
+05-07-2020 @ 10:22:51 - Square.js Response:
+ Array
+(
+    [digital_wallet_type] => NONE
+    [card_brand] => VISA
+    [last_4] => 1111
+    [exp_month] => 4
+    [exp_year] => 2022
+    [billing_postal_code] => K2A 0Y2
+)
+
+05-07-2020 @ 10:22:51 - Request
+method:
+uri: createOrderWithHttpInfo/8HDN7TNTTCXX6
+user-agent: WooCommerce-Square/2.1.4 (WooCommerce/4.1.0; WordPress/5.4.1)
+headers: Array
+(
+)
+body: {
+    "order": {
+        "reference_id": "108",
+        "line_items": [
+            {
+                "name": "B-Work from Home",
+                "quantity": "2",
+                "applied_taxes": [],
+                "base_price_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "name": "Album",
+                "quantity": "1",
+                "applied_taxes": [],
+                "base_price_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "name": "Beatles Let it be",
+                "quantity": "1",
+                "applied_taxes": [],
+                "base_price_money": {
+                    "amount": 1800,
+                    "currency": "CAD"
+                }
+            }
+        ],
+        "taxes": []
+    },
+    "idempotency_key": "6db0f1d2d879ceeef363cf5a065c8915:108"
+}
+duration: 0.72018s
+
+05-07-2020 @ 10:22:51 - Response
+code: 200
+message:
+headers: Array
+(
+    [0] => HTTP/2 200
+    [date] => Thu, 07 May 2020 14:22:51 GMT
+    [frame-options] => DENY
+    [x-frame-options] => DENY
+    [x-content-type-options] => nosniff
+    [x-xss-protection] => 1; mode=block
+    [content-type] => application/json;charset=utf-8
+    [square-version] => 2019-08-14
+    [vary] => Accept-Encoding, User-Agent
+    [strict-transport-security] => max-age=631152000; includeSubDomains; preload
+)
+body: {
+    "order": {
+        "id": "TmTIz4gv13kfcyevkWaXFBLMmZ4F",
+        "location_id": "8HDN7TNTTCXX6",
+        "reference_id": "108",
+        "source": {
+            "name": "Sandbox for sq0idp-gRf8qWctHlppoJEs_Xm28w"
+        },
+        "line_items": [
+            {
+                "uid": "Vll3l4or8fkQyepxyCqECD",
+                "name": "B-Work from Home",
+                "quantity": "2",
+                "base_price_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                },
+                "variation_total_price_money": {
+                    "amount": 3000,
+                    "currency": "CAD"
+                },
+                "gross_sales_money": {
+                    "amount": 3000,
+                    "currency": "CAD"
+                },
+                "total_tax_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_discount_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_money": {
+                    "amount": 3000,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "uid": "9lG9EIQIEfeQWS0g7uzZAD",
+                "name": "Album",
+                "quantity": "1",
+                "base_price_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                },
+                "variation_total_price_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                },
+                "gross_sales_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                },
+                "total_tax_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_discount_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "uid": "28VlE0YFaNjCnQOTD8nfpC",
+                "name": "Beatles Let it be",
+                "quantity": "1",
+                "base_price_money": {
+                    "amount": 1800,
+                    "currency": "CAD"
+                },
+                "variation_total_price_money": {
+                    "amount": 1800,
+                    "currency": "CAD"
+                },
+                "gross_sales_money": {
+                    "amount": 1800,
+                    "currency": "CAD"
+                },
+                "total_tax_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_discount_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_money": {
+                    "amount": 1800,
+                    "currency": "CAD"
+                }
+            }
+        ],
+        "net_amounts": {
+            "total_money": {
+                "amount": 6300,
+                "currency": "CAD"
+            },
+            "tax_money": {
+                "amount": 0,
+                "currency": "CAD"
+            },
+            "discount_money": {
+                "amount": 0,
+                "currency": "CAD"
+            },
+            "tip_money": {
+                "amount": 0,
+                "currency": "CAD"
+            },
+            "service_charge_money": {
+                "amount": 0,
+                "currency": "CAD"
+            }
+        },
+        "created_at": "2020-05-07T14:22:51.655Z",
+        "updated_at": "2020-05-07T14:22:51.655Z",
+        "state": "OPEN",
+        "version": 1,
+        "total_money": {
+            "amount": 6300,
+            "currency": "CAD"
+        },
+        "total_tax_money": {
+            "amount": 0,
+            "currency": "CAD"
+        },
+        "total_discount_money": {
+            "amount": 0,
+            "currency": "CAD"
+        },
+        "total_service_charge_money": {
+            "amount": 0,
+            "currency": "CAD"
+        }
+    }
+}
+
+05-07-2020 @ 10:22:52 - Request
+method:
+uri: chargeWithHttpInfo/8HDN7TNTTCXX6
+user-agent: WooCommerce-Square/2.1.4 (WooCommerce/4.1.0; WordPress/5.4.1)
+headers: Array
+(
+)
+body: {
+    "idempotency_key": "6db0f1d2d879ceeef363cf5a065c8915:108",
+    "amount_money": {
+        "amount": 6300,
+        "currency": "CAD"
+    },
+    "card_nonce": "cnon:CBASEPi4L-uDtt2QCSVc2dmWj7k",
+    "delay_capture": false,
+    "reference_id": "108",
+    "note": "BUSINESS1 - Order 108",
+    "customer_id": "Y82YE25Q9GSKS72EXY1H824E9M",
+    "billing_address": {
+        "address_line_1": "256 Carling",
+        "address_line_2": "",
+        "locality": "Ottawa",
+        "administrative_district_level_1": "ON",
+        "postal_code": "K2A 0Y2",
+        "country": "CA",
+        "first_name": "Sam",
+        "last_name": "Anderson",
+        "organization": ""
+    },
+    "buyer_email_address": "schmidtandeson@gmail.com",
+    "order_id": "TmTIz4gv13kfcyevkWaXFBLMmZ4F",
+    "verification_token": "verf:fb938aca-7ef0-408e-821c-387636cc4160"
+}
+duration: 0.79843s
+
+05-07-2020 @ 10:22:52 - Response
+code: 200
+message:
+headers: Array
+(
+    [0] => HTTP/2 200
+    [content-type] => application/json
+    [square-version] => 2019-08-14
+    [vary] => Origin, Accept-Encoding
+    [x-content-type-options] => nosniff
+    [x-download-options] => noopen
+    [x-frame-options] => SAMEORIGIN
+    [x-permitted-cross-domain-policies] => none
+    [x-xss-protection] => 1; mode=block
+    [date] => Thu, 07 May 2020 14:22:52 GMT
+    [content-length] => 699
+    [strict-transport-security] => max-age=631152000; includeSubDomains; preload
+)
+body: {
+    "transaction": {
+        "id": "TmTIz4gv13kfcyevkWaXFBLMmZ4F",
+        "location_id": "8HDN7TNTTCXX6",
+        "created_at": "2020-05-07T14:22:52Z",
+        "tenders": [
+            {
+                "id": "taQNZjWMiSXGa6kh6tv1xLtovaB",
+                "location_id": "8HDN7TNTTCXX6",
+                "transaction_id": "TmTIz4gv13kfcyevkWaXFBLMmZ4F",
+                "created_at": "2020-05-07T14:22:52Z",
+                "note": "BUSINESS1 - Order 108",
+                "amount_money": {
+                    "amount": 6300,
+                    "currency": "CAD"
+                },
+                "customer_id": "Y82YE25Q9GSKS72EXY1H824E9M",
+                "type": "CARD",
+                "card_details": {
+                    "status": "CAPTURED",
+                    "card": {
+                        "card_brand": "VISA",
+                        "last_4": "1111",
+                        "fingerprint": "sq-1-b44pvxfHPTyKGjbJlDoo6-Y1ZQk1tSZOnT3FDxkAhnNnckkHnPqa8zRUNtUCEENyMw"
+                    },
+                    "entry_method": "KEYED"
+                }
+            }
+        ],
+        "reference_id": "108",
+        "product": "EXTERNAL_API",
+        "order_id": "TmTIz4gv13kfcyevkWaXFBLMmZ4F"
+    }
+}
+
+05-07-2020 @ 11:20:12 - Square.js Response:
+ Array
+(
+    [digital_wallet_type] => NONE
+    [card_brand] => VISA
+    [last_4] => 1111
+    [exp_month] => 4
+    [exp_year] => 2022
+    [billing_postal_code] => K2A 0Y2
+)
+
+05-07-2020 @ 11:20:14 - Request
+method:
+uri: createOrderWithHttpInfo/8HDN7TNTTCXX6
+user-agent: WooCommerce-Square/2.1.4 (WooCommerce/4.1.0; WordPress/5.4.1)
+headers: Array
+(
+)
+body: {
+    "order": {
+        "reference_id": "110",
+        "line_items": [
+            {
+                "name": "B-Work from Home",
+                "quantity": "1",
+                "applied_taxes": [],
+                "base_price_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "name": "Cap",
+                "quantity": "2",
+                "applied_taxes": [],
+                "base_price_money": {
+                    "amount": 1600,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "name": "Flat rate",
+                "quantity": "1",
+                "applied_taxes": [],
+                "base_price_money": {
+                    "amount": 800,
+                    "currency": "CAD"
+                }
+            }
+        ],
+        "taxes": []
+    },
+    "idempotency_key": "6db0f1d2d879ceeef363cf5a065c8915:110"
+}
+duration: 0.5283s
+
+05-07-2020 @ 11:20:14 - Response
+code: 200
+message:
+headers: Array
+(
+    [0] => HTTP/2 200
+    [date] => Thu, 07 May 2020 15:20:14 GMT
+    [frame-options] => DENY
+    [x-frame-options] => DENY
+    [x-content-type-options] => nosniff
+    [x-xss-protection] => 1; mode=block
+    [content-type] => application/json;charset=utf-8
+    [square-version] => 2019-08-14
+    [vary] => Accept-Encoding, User-Agent
+    [strict-transport-security] => max-age=631152000; includeSubDomains; preload
+)
+body: {
+    "order": {
+        "id": "ldU9Fvc0MrcR10mvuURKEPH7dg4F",
+        "location_id": "8HDN7TNTTCXX6",
+        "reference_id": "110",
+        "source": {
+            "name": "Sandbox for sq0idp-gRf8qWctHlppoJEs_Xm28w"
+        },
+        "line_items": [
+            {
+                "uid": "GHinD0wf7QnHjS6kWH4LOD",
+                "name": "B-Work from Home",
+                "quantity": "1",
+                "base_price_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                },
+                "variation_total_price_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                },
+                "gross_sales_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                },
+                "total_tax_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_discount_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "uid": "VBNRKIMwxfdztINxsTUZDB",
+                "name": "Cap",
+                "quantity": "2",
+                "base_price_money": {
+                    "amount": 1600,
+                    "currency": "CAD"
+                },
+                "variation_total_price_money": {
+                    "amount": 3200,
+                    "currency": "CAD"
+                },
+                "gross_sales_money": {
+                    "amount": 3200,
+                    "currency": "CAD"
+                },
+                "total_tax_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_discount_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_money": {
+                    "amount": 3200,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "uid": "jVtY6rPVIznHams9mOIYi",
+                "name": "Flat rate",
+                "quantity": "1",
+                "base_price_money": {
+                    "amount": 800,
+                    "currency": "CAD"
+                },
+                "variation_total_price_money": {
+                    "amount": 800,
+                    "currency": "CAD"
+                },
+                "gross_sales_money": {
+                    "amount": 800,
+                    "currency": "CAD"
+                },
+                "total_tax_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_discount_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_money": {
+                    "amount": 800,
+                    "currency": "CAD"
+                }
+            }
+        ],
+        "net_amounts": {
+            "total_money": {
+                "amount": 5500,
+                "currency": "CAD"
+            },
+            "tax_money": {
+                "amount": 0,
+                "currency": "CAD"
+            },
+            "discount_money": {
+                "amount": 0,
+                "currency": "CAD"
+            },
+            "tip_money": {
+                "amount": 0,
+                "currency": "CAD"
+            },
+            "service_charge_money": {
+                "amount": 0,
+                "currency": "CAD"
+            }
+        },
+        "created_at": "2020-05-07T15:20:14.625Z",
+        "updated_at": "2020-05-07T15:20:14.625Z",
+        "state": "OPEN",
+        "version": 1,
+        "total_money": {
+            "amount": 5500,
+            "currency": "CAD"
+        },
+        "total_tax_money": {
+            "amount": 0,
+            "currency": "CAD"
+        },
+        "total_discount_money": {
+            "amount": 0,
+            "currency": "CAD"
+        },
+        "total_service_charge_money": {
+            "amount": 0,
+            "currency": "CAD"
+        }
+    }
+}
+
+05-07-2020 @ 11:20:15 - Request
+method:
+uri: chargeWithHttpInfo/8HDN7TNTTCXX6
+user-agent: WooCommerce-Square/2.1.4 (WooCommerce/4.1.0; WordPress/5.4.1)
+headers: Array
+(
+)
+body: {
+    "idempotency_key": "6db0f1d2d879ceeef363cf5a065c8915:110",
+    "amount_money": {
+        "amount": 5500,
+        "currency": "CAD"
+    },
+    "card_nonce": "cnon:CBASEMm7jAj5TnVyXke_5rs6wRM",
+    "delay_capture": false,
+    "reference_id": "110",
+    "note": "BUSINESS1 - Order 110",
+    "customer_id": "Y82YE25Q9GSKS72EXY1H824E9M",
+    "billing_address": {
+        "address_line_1": "256 Carling",
+        "address_line_2": "",
+        "locality": "Ottawa",
+        "administrative_district_level_1": "ON",
+        "postal_code": "K2A 0Y2",
+        "country": "CA",
+        "first_name": "Sam",
+        "last_name": "Anderson",
+        "organization": ""
+    },
+    "shipping_address": {
+        "address_line_1": "256 Carling",
+        "address_line_2": "",
+        "locality": "Ottawa",
+        "administrative_district_level_1": "ON",
+        "postal_code": "K2A 0Y2",
+        "country": "CA",
+        "first_name": "Sam",
+        "last_name": "Anderson"
+    },
+    "buyer_email_address": "schmidtandeson@gmail.com",
+    "order_id": "ldU9Fvc0MrcR10mvuURKEPH7dg4F",
+    "verification_token": "verf:a22cc85d-cb59-4144-9662-fc166d5a89ea"
+}
+duration: 1.00089s
+
+05-07-2020 @ 11:20:15 - Response
+code: 200
+message:
+headers: Array
+(
+    [0] => HTTP/2 200
+    [content-type] => application/json
+    [square-version] => 2019-08-14
+    [vary] => Origin, Accept-Encoding
+    [x-content-type-options] => nosniff
+    [x-download-options] => noopen
+    [x-frame-options] => SAMEORIGIN
+    [x-permitted-cross-domain-policies] => none
+    [x-xss-protection] => 1; mode=block
+    [date] => Thu, 07 May 2020 15:20:15 GMT
+    [content-length] => 699
+    [strict-transport-security] => max-age=631152000; includeSubDomains; preload
+)
+body: {
+    "transaction": {
+        "id": "ldU9Fvc0MrcR10mvuURKEPH7dg4F",
+        "location_id": "8HDN7TNTTCXX6",
+        "created_at": "2020-05-07T15:20:15Z",
+        "tenders": [
+            {
+                "id": "TZUEhJVRynprKPh2eO4RZ4ExvaB",
+                "location_id": "8HDN7TNTTCXX6",
+                "transaction_id": "ldU9Fvc0MrcR10mvuURKEPH7dg4F",
+                "created_at": "2020-05-07T15:20:15Z",
+                "note": "BUSINESS1 - Order 110",
+                "amount_money": {
+                    "amount": 5500,
+                    "currency": "CAD"
+                },
+                "customer_id": "Y82YE25Q9GSKS72EXY1H824E9M",
+                "type": "CARD",
+                "card_details": {
+                    "status": "CAPTURED",
+                    "card": {
+                        "card_brand": "VISA",
+                        "last_4": "1111",
+                        "fingerprint": "sq-1-b44pvxfHPTyKGjbJlDoo6-Y1ZQk1tSZOnT3FDxkAhnNnckkHnPqa8zRUNtUCEENyMw"
+                    },
+                    "entry_method": "KEYED"
+                }
+            }
+        ],
+        "reference_id": "110",
+        "product": "EXTERNAL_API",
+        "order_id": "ldU9Fvc0MrcR10mvuURKEPH7dg4F"
+    }
+}
+

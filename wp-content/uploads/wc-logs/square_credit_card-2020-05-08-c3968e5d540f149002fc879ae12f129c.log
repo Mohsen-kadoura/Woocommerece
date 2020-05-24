@@ -1,0 +1,858 @@
+05-08-2020 @ 07:05:49 - Square.js Response:
+ Array
+(
+    [digital_wallet_type] => NONE
+    [card_brand] => JCB
+    [last_4] => 5841
+    [exp_month] => 4
+    [exp_year] => 2022
+    [billing_postal_code] => k2A 0Y2
+)
+
+05-08-2020 @ 07:05:49 - Request
+method:
+uri: createCustomerWithHttpInfo
+user-agent: WooCommerce-Square/2.1.4 (WooCommerce/4.1.0; WordPress/5.4.1)
+headers: Array
+(
+)
+body: {
+    "given_name": "Sam",
+    "family_name": "Anderson",
+    "company_name": "",
+    "email_address": "schmidtandeson@gmail.com",
+    "address": {
+        "address_line_1": "Carling Ave.",
+        "address_line_2": "",
+        "locality": "Ottawa",
+        "administrative_district_level_1": "ON",
+        "postal_code": "K2A 0Y2",
+        "country": "CA",
+        "first_name": "Sam",
+        "last_name": "Anderson",
+        "organization": ""
+    },
+    "phone_number": "123456756"
+}
+duration: 0.6941s
+
+05-08-2020 @ 07:05:49 - Response
+code: 200
+message:
+headers: Array
+(
+    [0] => HTTP/2 200
+    [content-type] => application/json
+    [square-version] => 2019-08-14
+    [vary] => Origin, Accept-Encoding
+    [x-content-type-options] => nosniff
+    [x-download-options] => noopen
+    [x-frame-options] => SAMEORIGIN
+    [x-permitted-cross-domain-policies] => none
+    [x-xss-protection] => 1; mode=block
+    [date] => Fri, 08 May 2020 11:05:49 GMT
+    [content-length] => 455
+    [strict-transport-security] => max-age=631152000; includeSubDomains; preload
+)
+body: {
+    "customer": {
+        "id": "T7ACCM9D3WSR38J62FC8JQ4NN4",
+        "created_at": "2020-05-08T11:05:49.183Z",
+        "updated_at": "2020-05-08T11:05:49Z",
+        "given_name": "Sam",
+        "family_name": "Anderson",
+        "email_address": "schmidtandeson@gmail.com",
+        "address": {
+            "address_line_1": "Carling Ave.",
+            "locality": "Ottawa",
+            "administrative_district_level_1": "ON",
+            "postal_code": "K2A 0Y2",
+            "country": "CA"
+        },
+        "phone_number": "123456756",
+        "preferences": {
+            "email_unsubscribed": false
+        },
+        "creation_source": "THIRD_PARTY"
+    }
+}
+
+05-08-2020 @ 07:05:49 - Request
+method:
+uri: createOrderWithHttpInfo/8HDN7TNTTCXX6
+user-agent: WooCommerce-Square/2.1.4 (WooCommerce/4.1.0; WordPress/5.4.1)
+headers: Array
+(
+)
+body: {
+    "order": {
+        "reference_id": "111",
+        "line_items": [
+            {
+                "name": "B-Work from Home",
+                "quantity": "1",
+                "applied_taxes": [],
+                "base_price_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "name": "Cap",
+                "quantity": "1",
+                "applied_taxes": [],
+                "base_price_money": {
+                    "amount": 1600,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "name": "Beatles Let it be",
+                "quantity": "1",
+                "applied_taxes": [],
+                "base_price_money": {
+                    "amount": 1800,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "name": "Flat rate",
+                "quantity": "1",
+                "applied_taxes": [],
+                "base_price_money": {
+                    "amount": 800,
+                    "currency": "CAD"
+                }
+            }
+        ],
+        "taxes": []
+    },
+    "idempotency_key": "6db0f1d2d879ceeef363cf5a065c8915:111"
+}
+duration: 0.47052s
+
+05-08-2020 @ 07:05:49 - Response
+code: 200
+message:
+headers: Array
+(
+    [0] => HTTP/2 200
+    [date] => Fri, 08 May 2020 11:05:49 GMT
+    [frame-options] => DENY
+    [x-frame-options] => DENY
+    [x-content-type-options] => nosniff
+    [x-xss-protection] => 1; mode=block
+    [content-type] => application/json;charset=utf-8
+    [square-version] => 2019-08-14
+    [vary] => Accept-Encoding, User-Agent
+    [strict-transport-security] => max-age=631152000; includeSubDomains; preload
+)
+body: {
+    "order": {
+        "id": "nKyBp9LWJRCed2JW1dOLNikp4b4F",
+        "location_id": "8HDN7TNTTCXX6",
+        "reference_id": "111",
+        "source": {
+            "name": "Sandbox for sq0idp-gRf8qWctHlppoJEs_Xm28w"
+        },
+        "line_items": [
+            {
+                "uid": "JqqaDtsxFuxsLuzoiqWrJB",
+                "name": "B-Work from Home",
+                "quantity": "1",
+                "base_price_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                },
+                "variation_total_price_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                },
+                "gross_sales_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                },
+                "total_tax_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_discount_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_money": {
+                    "amount": 1500,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "uid": "FYGGxHujJsP0qKyYesCuPB",
+                "name": "Cap",
+                "quantity": "1",
+                "base_price_money": {
+                    "amount": 1600,
+                    "currency": "CAD"
+                },
+                "variation_total_price_money": {
+                    "amount": 1600,
+                    "currency": "CAD"
+                },
+                "gross_sales_money": {
+                    "amount": 1600,
+                    "currency": "CAD"
+                },
+                "total_tax_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_discount_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_money": {
+                    "amount": 1600,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "uid": "7SYqczw1yqMZUbBiUwzuoC",
+                "name": "Beatles Let it be",
+                "quantity": "1",
+                "base_price_money": {
+                    "amount": 1800,
+                    "currency": "CAD"
+                },
+                "variation_total_price_money": {
+                    "amount": 1800,
+                    "currency": "CAD"
+                },
+                "gross_sales_money": {
+                    "amount": 1800,
+                    "currency": "CAD"
+                },
+                "total_tax_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_discount_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_money": {
+                    "amount": 1800,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "uid": "itLlXwhlqF3vmKOygCdTr",
+                "name": "Flat rate",
+                "quantity": "1",
+                "base_price_money": {
+                    "amount": 800,
+                    "currency": "CAD"
+                },
+                "variation_total_price_money": {
+                    "amount": 800,
+                    "currency": "CAD"
+                },
+                "gross_sales_money": {
+                    "amount": 800,
+                    "currency": "CAD"
+                },
+                "total_tax_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_discount_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_money": {
+                    "amount": 800,
+                    "currency": "CAD"
+                }
+            }
+        ],
+        "net_amounts": {
+            "total_money": {
+                "amount": 5700,
+                "currency": "CAD"
+            },
+            "tax_money": {
+                "amount": 0,
+                "currency": "CAD"
+            },
+            "discount_money": {
+                "amount": 0,
+                "currency": "CAD"
+            },
+            "tip_money": {
+                "amount": 0,
+                "currency": "CAD"
+            },
+            "service_charge_money": {
+                "amount": 0,
+                "currency": "CAD"
+            }
+        },
+        "created_at": "2020-05-08T11:05:49.799Z",
+        "updated_at": "2020-05-08T11:05:49.799Z",
+        "state": "OPEN",
+        "version": 1,
+        "total_money": {
+            "amount": 5700,
+            "currency": "CAD"
+        },
+        "total_tax_money": {
+            "amount": 0,
+            "currency": "CAD"
+        },
+        "total_discount_money": {
+            "amount": 0,
+            "currency": "CAD"
+        },
+        "total_service_charge_money": {
+            "amount": 0,
+            "currency": "CAD"
+        }
+    }
+}
+
+05-08-2020 @ 07:05:50 - Request
+method:
+uri: chargeWithHttpInfo/8HDN7TNTTCXX6
+user-agent: WooCommerce-Square/2.1.4 (WooCommerce/4.1.0; WordPress/5.4.1)
+headers: Array
+(
+)
+body: {
+    "idempotency_key": "6db0f1d2d879ceeef363cf5a065c8915:111",
+    "amount_money": {
+        "amount": 5700,
+        "currency": "CAD"
+    },
+    "card_nonce": "cnon:CBASEEG2OcxY602nWd78Tuwc9pM",
+    "delay_capture": false,
+    "reference_id": "111",
+    "note": "BUSINESS1 - Order 111",
+    "customer_id": "T7ACCM9D3WSR38J62FC8JQ4NN4",
+    "billing_address": {
+        "address_line_1": "Carling Ave.",
+        "address_line_2": "",
+        "locality": "Ottawa",
+        "administrative_district_level_1": "ON",
+        "postal_code": "K2A 0Y2",
+        "country": "CA",
+        "first_name": "Sam",
+        "last_name": "Anderson",
+        "organization": ""
+    },
+    "shipping_address": {
+        "address_line_1": "Carling Ave.",
+        "address_line_2": "",
+        "locality": "Ottawa",
+        "administrative_district_level_1": "ON",
+        "postal_code": "K2A 0Y2",
+        "country": "CA",
+        "first_name": "Sam",
+        "last_name": "Anderson"
+    },
+    "buyer_email_address": "schmidtandeson@gmail.com",
+    "order_id": "nKyBp9LWJRCed2JW1dOLNikp4b4F",
+    "verification_token": "verf:ad6e2d76-44d1-4cf1-8307-2bc45c441e2d"
+}
+duration: 0.98363s
+
+05-08-2020 @ 07:05:50 - Response
+code: 200
+message:
+headers: Array
+(
+    [0] => HTTP/2 200
+    [content-type] => application/json
+    [square-version] => 2019-08-14
+    [vary] => Origin, Accept-Encoding
+    [x-content-type-options] => nosniff
+    [x-download-options] => noopen
+    [x-frame-options] => SAMEORIGIN
+    [x-permitted-cross-domain-policies] => none
+    [x-xss-protection] => 1; mode=block
+    [date] => Fri, 08 May 2020 11:05:50 GMT
+    [content-length] => 698
+    [strict-transport-security] => max-age=631152000; includeSubDomains; preload
+)
+body: {
+    "transaction": {
+        "id": "nKyBp9LWJRCed2JW1dOLNikp4b4F",
+        "location_id": "8HDN7TNTTCXX6",
+        "created_at": "2020-05-08T11:05:50Z",
+        "tenders": [
+            {
+                "id": "BMsXAvKxGtwCorPTMs5d9uygvaB",
+                "location_id": "8HDN7TNTTCXX6",
+                "transaction_id": "nKyBp9LWJRCed2JW1dOLNikp4b4F",
+                "created_at": "2020-05-08T11:05:50Z",
+                "note": "BUSINESS1 - Order 111",
+                "amount_money": {
+                    "amount": 5700,
+                    "currency": "CAD"
+                },
+                "customer_id": "T7ACCM9D3WSR38J62FC8JQ4NN4",
+                "type": "CARD",
+                "card_details": {
+                    "status": "CAPTURED",
+                    "card": {
+                        "card_brand": "JCB",
+                        "last_4": "5841",
+                        "fingerprint": "sq-1-eLOZI1kBVRIGBlESTqXComSy8N8Lymm_e8X796TOcb4CZhn2046h-_LTuFRcH8EmqQ"
+                    },
+                    "entry_method": "KEYED"
+                }
+            }
+        ],
+        "reference_id": "111",
+        "product": "EXTERNAL_API",
+        "order_id": "nKyBp9LWJRCed2JW1dOLNikp4b4F"
+    }
+}
+
+05-08-2020 @ 11:19:03 - Request
+method:
+uri: createOrderWithHttpInfo/8HDN7TNTTCXX6
+user-agent: WooCommerce-Square/2.1.4 (WooCommerce/4.1.0; WordPress/5.4.1)
+headers: Array
+(
+)
+body: {
+    "order": {
+        "reference_id": "112",
+        "line_items": [
+            {
+                "name": "Single",
+                "quantity": "1",
+                "applied_taxes": [],
+                "base_price_money": {
+                    "amount": 200,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "name": "Cap",
+                "quantity": "1",
+                "applied_taxes": [],
+                "base_price_money": {
+                    "amount": 1600,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "name": "Beatles Let it be",
+                "quantity": "2",
+                "applied_taxes": [],
+                "base_price_money": {
+                    "amount": 1800,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "name": "T-Shirt with Logo",
+                "quantity": "1",
+                "applied_taxes": [],
+                "base_price_money": {
+                    "amount": 1800,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "name": "Flat rate",
+                "quantity": "1",
+                "applied_taxes": [],
+                "base_price_money": {
+                    "amount": 800,
+                    "currency": "CAD"
+                }
+            }
+        ],
+        "taxes": []
+    },
+    "idempotency_key": "6db0f1d2d879ceeef363cf5a065c8915:112"
+}
+duration: 0.55455s
+
+05-08-2020 @ 11:19:03 - Response
+code: 200
+message:
+headers: Array
+(
+    [0] => HTTP/2 200
+    [date] => Fri, 08 May 2020 15:19:02 GMT
+    [frame-options] => DENY
+    [x-frame-options] => DENY
+    [x-content-type-options] => nosniff
+    [x-xss-protection] => 1; mode=block
+    [content-type] => application/json;charset=utf-8
+    [square-version] => 2019-08-14
+    [vary] => Accept-Encoding, User-Agent
+    [strict-transport-security] => max-age=631152000; includeSubDomains; preload
+)
+body: {
+    "order": {
+        "id": "RlpR2i5tYgwJywEuMyofpLQaHc4F",
+        "location_id": "8HDN7TNTTCXX6",
+        "reference_id": "112",
+        "source": {
+            "name": "Sandbox for sq0idp-gRf8qWctHlppoJEs_Xm28w"
+        },
+        "line_items": [
+            {
+                "uid": "pSwMvVREqH97Z4NAA8BrZB",
+                "name": "Single",
+                "quantity": "1",
+                "base_price_money": {
+                    "amount": 200,
+                    "currency": "CAD"
+                },
+                "variation_total_price_money": {
+                    "amount": 200,
+                    "currency": "CAD"
+                },
+                "gross_sales_money": {
+                    "amount": 200,
+                    "currency": "CAD"
+                },
+                "total_tax_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_discount_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_money": {
+                    "amount": 200,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "uid": "9bJuDOckgvJ0V8vrdJxYpC",
+                "name": "Cap",
+                "quantity": "1",
+                "base_price_money": {
+                    "amount": 1600,
+                    "currency": "CAD"
+                },
+                "variation_total_price_money": {
+                    "amount": 1600,
+                    "currency": "CAD"
+                },
+                "gross_sales_money": {
+                    "amount": 1600,
+                    "currency": "CAD"
+                },
+                "total_tax_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_discount_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_money": {
+                    "amount": 1600,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "uid": "kgmFGe2QtSfdH838bWZ0L",
+                "name": "Beatles Let it be",
+                "quantity": "2",
+                "base_price_money": {
+                    "amount": 1800,
+                    "currency": "CAD"
+                },
+                "variation_total_price_money": {
+                    "amount": 3600,
+                    "currency": "CAD"
+                },
+                "gross_sales_money": {
+                    "amount": 3600,
+                    "currency": "CAD"
+                },
+                "total_tax_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_discount_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_money": {
+                    "amount": 3600,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "uid": "GNsoFrVt8HIu0d9EU3oOyC",
+                "name": "T-Shirt with Logo",
+                "quantity": "1",
+                "base_price_money": {
+                    "amount": 1800,
+                    "currency": "CAD"
+                },
+                "variation_total_price_money": {
+                    "amount": 1800,
+                    "currency": "CAD"
+                },
+                "gross_sales_money": {
+                    "amount": 1800,
+                    "currency": "CAD"
+                },
+                "total_tax_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_discount_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_money": {
+                    "amount": 1800,
+                    "currency": "CAD"
+                }
+            },
+            {
+                "uid": "BhoaUldWhsd2u3MXl6FByC",
+                "name": "Flat rate",
+                "quantity": "1",
+                "base_price_money": {
+                    "amount": 800,
+                    "currency": "CAD"
+                },
+                "variation_total_price_money": {
+                    "amount": 800,
+                    "currency": "CAD"
+                },
+                "gross_sales_money": {
+                    "amount": 800,
+                    "currency": "CAD"
+                },
+                "total_tax_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_discount_money": {
+                    "amount": 0,
+                    "currency": "CAD"
+                },
+                "total_money": {
+                    "amount": 800,
+                    "currency": "CAD"
+                }
+            }
+        ],
+        "net_amounts": {
+            "total_money": {
+                "amount": 8000,
+                "currency": "CAD"
+            },
+            "tax_money": {
+                "amount": 0,
+                "currency": "CAD"
+            },
+            "discount_money": {
+                "amount": 0,
+                "currency": "CAD"
+            },
+            "tip_money": {
+                "amount": 0,
+                "currency": "CAD"
+            },
+            "service_charge_money": {
+                "amount": 0,
+                "currency": "CAD"
+            }
+        },
+        "created_at": "2020-05-08T15:19:02.919Z",
+        "updated_at": "2020-05-08T15:19:02.919Z",
+        "state": "OPEN",
+        "version": 1,
+        "total_money": {
+            "amount": 8000,
+            "currency": "CAD"
+        },
+        "total_tax_money": {
+            "amount": 0,
+            "currency": "CAD"
+        },
+        "total_discount_money": {
+            "amount": 0,
+            "currency": "CAD"
+        },
+        "total_service_charge_money": {
+            "amount": 0,
+            "currency": "CAD"
+        }
+    }
+}
+
+05-08-2020 @ 11:19:03 - Square.js Response:
+ Array
+(
+    [digital_wallet_type] => NONE
+    [card_brand] => VISA
+    [last_4] => 1111
+    [exp_month] => 4
+    [exp_year] => 2022
+    [billing_postal_code] => K2A 0Y2
+)
+
+05-08-2020 @ 11:19:03 - Request
+method:
+uri: chargeWithHttpInfo/8HDN7TNTTCXX6
+user-agent: WooCommerce-Square/2.1.4 (WooCommerce/4.1.0; WordPress/5.4.1)
+headers: Array
+(
+)
+body: {
+    "idempotency_key": "6db0f1d2d879ceeef363cf5a065c8915:112",
+    "amount_money": {
+        "amount": 8000,
+        "currency": "CAD"
+    },
+    "card_nonce": "cnon:CBASELKYNQSWHk8qKi2GJyf83aU",
+    "delay_capture": false,
+    "reference_id": "112",
+    "note": "BUSINESS1 - Order 112",
+    "customer_id": "Y82YE25Q9GSKS72EXY1H824E9M",
+    "billing_address": {
+        "address_line_1": "256 Carling",
+        "address_line_2": "",
+        "locality": "Ottawa",
+        "administrative_district_level_1": "ON",
+        "postal_code": "K2A 0Y2",
+        "country": "CA",
+        "first_name": "Sam",
+        "last_name": "Anderson",
+        "organization": ""
+    },
+    "shipping_address": {
+        "address_line_1": "256 Carling",
+        "address_line_2": "",
+        "locality": "Ottawa",
+        "administrative_district_level_1": "ON",
+        "postal_code": "K2A 0Y2",
+        "country": "CA",
+        "first_name": "Sam",
+        "last_name": "Anderson"
+    },
+    "buyer_email_address": "schmidtandeson@gmail.com",
+    "order_id": "RlpR2i5tYgwJywEuMyofpLQaHc4F",
+    "verification_token": "verf:9dcb136c-e0bb-4531-a734-4be10c0af2a7"
+}
+duration: 0.76966s
+
+05-08-2020 @ 11:19:03 - Response
+code: 200
+message:
+headers: Array
+(
+    [0] => HTTP/2 200
+    [content-type] => application/json
+    [square-version] => 2019-08-14
+    [vary] => Origin, Accept-Encoding
+    [x-content-type-options] => nosniff
+    [x-download-options] => noopen
+    [x-frame-options] => SAMEORIGIN
+    [x-permitted-cross-domain-policies] => none
+    [x-xss-protection] => 1; mode=block
+    [date] => Fri, 08 May 2020 15:19:03 GMT
+    [content-length] => 699
+    [strict-transport-security] => max-age=631152000; includeSubDomains; preload
+)
+body: {
+    "transaction": {
+        "id": "RlpR2i5tYgwJywEuMyofpLQaHc4F",
+        "location_id": "8HDN7TNTTCXX6",
+        "created_at": "2020-05-08T15:19:03Z",
+        "tenders": [
+            {
+                "id": "PtD8I7tVkoXJXYcFGO663L6vuaB",
+                "location_id": "8HDN7TNTTCXX6",
+                "transaction_id": "RlpR2i5tYgwJywEuMyofpLQaHc4F",
+                "created_at": "2020-05-08T15:19:03Z",
+                "note": "BUSINESS1 - Order 112",
+                "amount_money": {
+                    "amount": 8000,
+                    "currency": "CAD"
+                },
+                "customer_id": "Y82YE25Q9GSKS72EXY1H824E9M",
+                "type": "CARD",
+                "card_details": {
+                    "status": "CAPTURED",
+                    "card": {
+                        "card_brand": "VISA",
+                        "last_4": "1111",
+                        "fingerprint": "sq-1-b44pvxfHPTyKGjbJlDoo6-Y1ZQk1tSZOnT3FDxkAhnNnckkHnPqa8zRUNtUCEENyMw"
+                    },
+                    "entry_method": "KEYED"
+                }
+            }
+        ],
+        "reference_id": "112",
+        "product": "EXTERNAL_API",
+        "order_id": "RlpR2i5tYgwJywEuMyofpLQaHc4F"
+    }
+}
+
+05-08-2020 @ 11:21:38 - Request
+method:
+uri: retrieveCustomerWithHttpInfo/Y82YE25Q9GSKS72EXY1H824E9M
+user-agent: WooCommerce-Square/2.1.4 (WooCommerce/4.1.0; WordPress/5.4.1)
+headers: Array
+(
+)
+body:
+duration: 0.56962s
+
+05-08-2020 @ 11:21:38 - Response
+code: 200
+message:
+headers: Array
+(
+    [0] => HTTP/2 200
+    [content-type] => application/json
+    [square-version] => 2019-08-14
+    [vary] => Origin, Accept-Encoding
+    [x-content-type-options] => nosniff
+    [x-download-options] => noopen
+    [x-frame-options] => SAMEORIGIN
+    [x-permitted-cross-domain-policies] => none
+    [x-xss-protection] => 1; mode=block
+    [date] => Fri, 08 May 2020 15:21:37 GMT
+    [content-length] => 473
+    [strict-transport-security] => max-age=631152000; includeSubDomains; preload
+)
+body: {
+    "customer": {
+        "id": "Y82YE25Q9GSKS72EXY1H824E9M",
+        "created_at": "2020-05-06T14:21:52.557Z",
+        "updated_at": "2020-05-06T14:21:53Z",
+        "given_name": "Sam",
+        "family_name": "Anderson",
+        "email_address": "mohsen.kadoura@yahoo.com",
+        "address": {
+            "address_line_1": "256 Carling",
+            "locality": "Ottawa",
+            "administrative_district_level_1": "ON",
+            "postal_code": "K2A 0Y2",
+            "country": "CA"
+        },
+        "phone_number": "123456789",
+        "reference_id": "1",
+        "preferences": {
+            "email_unsubscribed": false
+        },
+        "creation_source": "THIRD_PARTY"
+    }
+}
+
